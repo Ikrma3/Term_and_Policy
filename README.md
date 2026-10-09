@@ -7,6 +7,7 @@ https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/
 |---|---|---|
 | SkinScan | [skinscan/privacy.html](https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/skinscan/privacy.html) | [skinscan/terms.html](https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/skinscan/terms.html) |
 | Invoice Maker | [invoice/privacy.html](https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/invoice/privacy.html) | [invoice/terms.html](https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/invoice/terms.html) |
+| Cat Games | [catgame/privacy.html](https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/catgame/privacy.html) | [catgame/terms.html](https://ikrma3.github.io/Skin_Care_Scanner_Terms_and_policy/catgame/terms.html) |
 
 Contact: support@tefteq.com
 
