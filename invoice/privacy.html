@@ -10,7 +10,7 @@
 <main>
   <header class="brand"><div class="logo"></div><div class="app">Invoice Maker</div></header>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective date: October 9, 2026</p>
+  <p class="muted">Effective date: October 12, 2026</p>
 
   <div class="note">
     <strong>In short:</strong> we store the business details, clients, invoices and payments you
@@ -53,25 +53,18 @@
       <td>To show your logo on invoices on all your devices.</td>
     </tr>
     <tr>
-      <td>Trial record</td>
-      <td>A one-way scrambled code (a SHA-256 hash) made from your normalized email address and/or
-        Apple account identifier, with the time your free trial started. It contains no readable
-        email, name or invoice content.</td>
-      <td>So the free trial is given once per person, even if an account is deleted and created
-        again (fraud prevention).</td>
-    </tr>
-    <tr>
       <td>Subscription status</td>
-      <td>Whether you have an active subscription, provided by Apple.</td>
-      <td>To unlock the App after the trial. Payments are handled by Apple; we never receive your
-        card or payment details.</td>
+      <td>Whether you have an active subscription and whether your Apple ID can still get the free
+        trial, both provided by Apple on your device.</td>
+      <td>To unlock invoice PDFs (preview, print and sharing) and to show the free trial only when
+        Apple offers it. Payments and free trials are handled by Apple; we never receive your card
+        or payment details.</td>
     </tr>
     <tr>
       <td>Technical</td>
-      <td>Firebase App Check confirms requests come from the genuine App on a genuine device. We
-        also store the server time you last used the App, and a few settings on your device
-        (such as your trial start, kept in the iOS Keychain).</td>
-      <td>To protect the service from abuse and to verify the trial period.</td>
+      <td>Firebase App Check confirms requests come from the genuine App on a genuine device. A few
+        settings are kept on your device (such as whether you've seen the intro screens).</td>
+      <td>To protect the service from abuse and remember your settings.</td>
     </tr>
   </table>
 
@@ -97,7 +90,7 @@
   <p>We use these providers to run the App. They process data only to provide their service to us:</p>
   <ul>
     <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore and App Check): stores your
-      account, business profile, clients, invoices, payments and the trial record.
+      account, business profile, clients, invoices and payments.
       <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
     <li><strong>Cloudinary</strong>: hosts your company logo, if you add one. The image is available
       at a hard-to-guess web address so it can appear on your invoices.
@@ -112,10 +105,10 @@
 
   <h2>4. How long we keep data</h2>
   <p>We keep your data until you delete it or delete your account. When you delete your account,
-    your profile, clients, invoices and payments are deleted. The anonymous trial record is kept
-    for fraud prevention as described above; it can't be used to identify you. Logo files you
-    replace, or that belong to a deleted account, are put on a removal list and deleted from
-    Cloudinary during our regular clean-up.</p>
+    your profile, clients, invoices and payments are deleted, along with your sign-in account and
+    the App's offline copy on your device. We don't keep any record about you after deletion.
+    Logo files you replace, or that belong to a deleted account, are put on a removal list (which
+    holds only the file's ID) and deleted from Cloudinary during our regular clean-up.</p>
 
   <h2>5. Your choices and rights</h2>
   <ul>
@@ -132,8 +125,8 @@
       authority.</li>
   </ul>
   <p>Where the law requires a legal basis (such as the GDPR), we process your data to provide the
-    service you asked for, and the trial record and App Check data based on our legitimate interest
-    in preventing abuse.</p>
+    service you asked for, and App Check data based on our legitimate interest in preventing
+    abuse.</p>
 
   <h2>6. Security</h2>
   <p>Data is sent over encrypted connections and stored with Google Firebase. Access rules let each
