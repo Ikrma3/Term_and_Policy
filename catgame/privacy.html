@@ -10,7 +10,7 @@
 <main>
   <header class="brand"><div class="logo"></div><div class="app">Cat Games</div></header>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective date: October 9, 2026</p>
+  <p class="muted">Effective date: October 27, 2026</p>
 
   <div class="note">
     <strong>In short:</strong> we keep your sign-in email, your cat's name and your game scores so
@@ -46,16 +46,16 @@
       <td>Device record</td>
       <td>A random device identifier created by the App and kept in the iOS Keychain (so it
         survives reinstalling), which games have used their free play on this device, the
-        sign-in account identifiers (for example <code>google.com:…</code> or
-        <code>apple.com:…</code>) that have been used on the device, and when the record was
-        created and updated. It does not contain your email, name or scores.</td>
+        one-way scrambled codes (SHA-256 hashes) of the sign-in account identifiers used on the
+        device, and when the record was created and updated. It does not contain your email,
+        name, scores or readable account identifiers.</td>
       <td>So each game's free play is given once per device, including if an account is deleted
         and created again (fraud prevention).</td>
     </tr>
     <tr>
       <td>Subscription status</td>
-      <td>Whether you have an active subscription, its plan (monthly or yearly) and when it
-        renews or ends.</td>
+      <td>Whether you have an active subscription and its plan (monthly or yearly), provided by
+        Apple on your device and kept only on your device.</td>
       <td>To unlock the games. Payments are handled by Apple; we never receive your card or
         payment details.</td>
     </tr>
@@ -78,7 +78,7 @@
   <p>We use these providers to run the App. They process data only to provide their service to us:</p>
   <ul>
     <li><strong>Google Firebase</strong> (Authentication and Cloud Firestore): stores your account,
-      cat's name, game sessions, subscription status and the device record.
+      cat's name, game sessions and the device record.
       <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
     <li><strong>Apple</strong>: Sign in with Apple and in-app purchases and subscriptions.
       <a href="https://www.apple.com/legal/privacy/">Apple privacy</a>.</li>
@@ -90,7 +90,8 @@
 
   <h2>4. How long we keep data</h2>
   <p>We keep your data until you delete your account. When you delete your account, your profile
-    (email, cat's name, subscription status) and all your game sessions are deleted. The device
+    (email and cat's name) and all your game sessions are deleted, and if you used Sign in with
+    Apple we ask Apple to revoke the App's sign-in authorization. The device
     record is kept for fraud prevention as described above, so games that already used their free
     play stay locked on that device. To have the device record removed as well, contact us; free
     plays on that device won't be given again.</p>
