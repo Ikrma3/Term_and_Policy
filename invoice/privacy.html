@@ -10,7 +10,7 @@
 <main>
   <header class="brand"><div class="logo"></div><div class="app">Instant Invoice Receipt Maker</div></header>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective date: October 21, 2026</p>
+  <p class="muted">Effective date: November 14, 2026</p>
 
   <div class="note">
     <strong>In short:</strong> we store the business details, clients, invoices and payments you
@@ -48,6 +48,18 @@
       <td>To create, track and share your invoices.</td>
     </tr>
     <tr>
+      <td>Client signatures</td>
+      <td>If a client signs an invoice or estimate on your device, the signature drawing, the name
+        they type and the date are saved with that invoice or estimate.</td>
+      <td>To record the client's approval and show it on the invoice PDF.</td>
+    </tr>
+    <tr>
+      <td>Expenses and receipt photos</td>
+      <td>Expenses you record (vendor, amount, currency, date, category, notes) and, if you add one,
+        a photo of the receipt.</td>
+      <td>To track your spending and show your profit, and to keep the receipt with the expense.</td>
+    </tr>
+    <tr>
       <td>Company logo</td>
       <td>If you add a logo, the image is resized and uploaded to our image host (Cloudinary).</td>
       <td>To show your logo on invoices on all your devices.</td>
@@ -78,8 +90,11 @@
     information for anything else.</p>
 
   <h3>Photos, files and ratings</h3>
-  <p>The App only accesses your photo library when you choose a logo, and it doesn't take
-    photos. PDFs of your invoices are
+  <p>The App uses the camera only when you tap <em>Scan Receipt</em>, and your photo library only
+    when you choose a logo or a receipt photo. The text on a receipt (vendor, total, date) is read
+    <strong>on your device</strong> with Apple's built-in text recognition; the image is not sent
+    anywhere to be read. The receipt photo you save is uploaded to our private storage (see
+    Cloudflare below) and only you can access it. PDFs of your invoices are
     created on your device; they're shared only when you choose to (for example by email, Messages
     or AirDrop through the iOS share sheet), and the temporary files are kept on your device. After
     you've been a paying subscriber for a while, the App may show Apple's standard rating prompt
@@ -96,11 +111,15 @@
   <p>We use these providers to run the App. They process data only to provide their service to us:</p>
   <ul>
     <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore and App Check): stores your
-      account, business profile, clients, invoices and payments.
+      account, business profile, clients, invoices, payments, signatures and expenses.
       <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
     <li><strong>Cloudinary</strong>: hosts your company logo, if you add one. The image is available
       at a hard-to-guess web address so it can appear on your invoices.
       <a href="https://cloudinary.com/privacy">Cloudinary privacy</a>.</li>
+    <li><strong>Cloudflare</strong> (R2 storage and Workers): stores the receipt photos you save,
+      in a private bucket. Each request is checked against your sign-in, so only you can view or
+      delete your photos.
+      <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy</a>.</li>
     <li><strong>Apple</strong>: Sign in with Apple, in-app purchases and subscriptions, and App Attest
       (used by App Check). <a href="https://www.apple.com/legal/privacy/">Apple privacy</a>.</li>
     <li><strong>Google</strong>: Sign in with Google.
@@ -111,15 +130,15 @@
 
   <h2>4. How long we keep data</h2>
   <p>We keep your data until you delete it or delete your account. When you delete your account,
-    your profile, clients, invoices and payments are deleted, along with your sign-in account and
+    your profile, clients, invoices, payments, signatures, expenses and receipt photos are deleted, along with your sign-in account and
     the App's offline copy on your device. We don't keep any record about you after deletion.
     Logo files you replace, or that belong to a deleted account, are put on a removal list (which
     holds only the file's ID) and deleted from Cloudinary during our regular clean-up.</p>
 
   <h2>5. Your choices and rights</h2>
   <ul>
-    <li><strong>Edit or delete</strong> your business details, clients, invoices and payments at any
-      time in the App.</li>
+    <li><strong>Edit or delete</strong> your business details, clients, invoices, payments,
+      signatures, expenses and receipt photos at any time in the App.</li>
     <li><strong>Delete your account</strong> in the App's Profile. This permanently deletes your
       account and the data above. If you used Sign in with Apple, we also ask Apple to revoke the
       App's sign-in authorization. You can also remove it yourself in your Apple ID settings under
@@ -136,8 +155,9 @@
     abuse.</p>
 
   <h2>6. Security</h2>
-  <p>Data is sent over encrypted connections and stored with Google Firebase. Access rules let each
-    signed-in user read and change only their own data. No method of storage is 100% secure, but we
+  <p>Data is sent over encrypted connections and stored with Google Firebase and, for receipt photos,
+    in a private Cloudflare R2 bucket. Access rules let each signed-in user read and change only
+    their own data. No method of storage is 100% secure, but we
     take reasonable steps to protect your information.</p>
 
   <h2>7. Children</h2>
